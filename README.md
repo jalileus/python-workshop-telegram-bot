@@ -10,11 +10,11 @@ all the commands of the bot like `/start` command `/help` command etc...)//`cons
 
 # How to run:
 1. you need to download `python-telegram-bot` version : `20.6`, for `Linux`: open the terminal and type the command: `sudo apt install python-telegram-bot`
-for `Windows` open windows powershell and type the comand: `pip install python-telegram-bot`, `Note:` if you are facing a trouble downloading python telegram bot, have a look at the link: `https://pypi.org/project/python-telegram-bot/`.
+for `Windows`: open windows powershell and type the comand: `pip install python-telegram-bot`, `Note:` if you are facing a trouble downloading python telegram bot, have a look at the link: `https://pypi.org/project/python-telegram-bot/`.
 2. after downloading python-telegram-bot you can run the `main.py` code in the platform you using preferably (Visual Studio 1.84.0) but it should work in any other plateforms.
-3. after the running the code, go to telegram and search for the bot using the user name: `@EExxEEBoT_bot`.
+3. after running the code, go to telegram and search for the bot using the user name: `@EExxEEBoT_bot`.
 4. press start, and start the code.
-`Note`: the code prints some messages to the terminal when the user use the commands to help you understand, and let you know what is the user choosing or asking for in each step
+`Note`: the code prints some messages to the terminal when the user is using the commands to help you understand, and let you know what is the user choosing or asking for in each step
 
 # About the bot and how to use it:
 the bot idea is to help the user undersatnd some concepts of programming such as time complexity, space complexity, and the most important sorting algorithms.
@@ -23,9 +23,9 @@ the bot support recognizing some kind of messages and can reply to it (hello, th
 2. `/help` command to get help the user with how to use the bot in a correct way.
 3. `/list` command to send a list with all the possible algorithms available.
 4. `/def` after the user click on the command /def a keyboard of choices will appear to the user, after choosing one of the concepts, the user will get its definition.
-5. `/spacecomplexity`  after clicking on the command /spacecomplexity a keyboard of choices will appear, after choosing one of the algorithms, the user will get information about its space complexity.
+5. `/spacecomplexity` after clicking on the command /spacecomplexity a keyboard of choices will appear, after choosing one of the algorithms, the user will get information about its space complexity.
 6. `/timecomplexity` after clicking on the command /timecomplexity a keyboard of choices will appear, after choosing one of the cases the user wants, another keyboard will appear and the user can choose one of the sorting algorithms to get information about its time complexity
 7. `/cancel` a command to cancel the most recent request.
 8. `/code` after clicking on the command /code the user can choose one of the sorting algorithms, after that the bot will send a text file which contains a pseudocode of the algorithm choosen by the user.
 9. `/gif` after clicking on the command /gif and choosing an algorithm, the bot will send the user a gif with a link of the source the bot took it from, so it will help the user to visualize the sorting algorithm required.
-`Note:` the bot will send a message to inform the user to choose when you the user at the choosing state, otherwise, the bot will not understand the user choice without asking for the command(to inform the bot that the user want to start choosing).
+`Note:` the bot will send a message to inform the user to choose when the user at the choosing state, otherwise, the bot will not understand the user choice without asking for the command(to inform the bot that the user want to start choosing).
