@@ -38,6 +38,7 @@ async def HelpCommand(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "type: /list , to see all the sorting algorithms available.\n"
         "type: /gif , and then choose one of the sorting algorithms to get a gif to visualize the algorithm.\n"
         "type: /code, and then choose one of the sorting algorithms to get a pseudocodes for the algorithm.\n"
+        "type: /cancel, to cancel the recent request.\n"
         "you can also try to chat with the bot, for example you can say hello, try it yourself!, the bot will reply."
     )
 
