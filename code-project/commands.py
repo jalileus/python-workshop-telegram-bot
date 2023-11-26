@@ -1,7 +1,5 @@
-from telegram.ext import (
-    ContextTypes,
-)
-from telegram import ReplyKeyboardMarkup, Update, InlineKeyboardMarkup
+from telegram.ext import ContextTypes, ConversationHandler
+from telegram import ReplyKeyboardMarkup, Update
 from const import (
     CHOOSINGALGORITHMSPACE,
     CHOOSINGDEFINITION,
@@ -65,7 +63,7 @@ async def ListCommand(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def Cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print("the user canceled the last operation")
     await update.message.reply_text("canceled")
-    return
+    return ConversationHandler.END
 
 
 # Defenition command
