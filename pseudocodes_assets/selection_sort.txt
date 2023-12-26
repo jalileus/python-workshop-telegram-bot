@@ -1,0 +1,31 @@
+bingo(array A)
+
+{ This procedure sorts in ascending order by
+  repeatedly moving maximal items to the end. }
+begin
+    last := length(A) - 1;
+
+    { The first iteration is written to look very similar to the subsequent ones,
+      but without swaps. }
+    nextMax := A[last];
+    for i := last - 1 downto 0 do
+        if A[i] > nextMax then
+            nextMax := A[i];
+    while (last > 0) and (A[last] = nextMax) do
+        last := last - 1;
+
+    while last > 0 do begin
+        prevMax := nextMax;
+        nextMax := A[last];
+        for i := last - 1 downto 0 do
+             if A[i] > nextMax then
+                 if A[i] <> prevMax then
+                     nextMax := A[i];
+                 else begin
+                     swap(A[i], A[last]);
+                     last := last - 1;
+                 end
+        while (last > 0) and (A[last] = nextMax) do
+            last := last - 1;
+    end;
+end;

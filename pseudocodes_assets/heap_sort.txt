@@ -1,0 +1,17 @@
+procedure heapsort(a, count) is
+    input: an unordered array a of length count
+ 
+    (Build the heap in array a so that largest value is at the root)
+    heapify(a, count)
+
+    (The following loop maintains the invariants that a[0:end−1] is a heap, and
+    every element a[end:count−1] beyond end is greater than everything before it,
+    i.e. a[end:count−1] is in sorted order.)
+    end ← count
+    while end > 1 do
+        (the heap size is reduced by one)
+        end ← end − 1
+        (a[0] is the root and largest value. The swap moves it in front of the sorted elements.)
+        swap(a[end], a[0])
+        (the swap ruined the heap property, so restore it)
+        siftDown(a, 0, end)
