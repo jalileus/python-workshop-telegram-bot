@@ -1,7 +1,7 @@
 from typing import Final
 
 # Initializing the constants required
-TOKEN: Final = "6358367431:AAHjgRwKbwLYM-S_D8yFwz6JxH6XpDOQQbU"
+#TOKEN: Final = "choose your own token"
 BOTUSERNAME: Final = "@EExxEEBoT_bot"
 CHOOSINGDEFINITION = range(2)
 WORSTCASEANSWER = range(5)
